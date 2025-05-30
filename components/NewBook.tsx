@@ -59,10 +59,10 @@ function NewBook() {
       <div className="p-8 border  shadow-lg rounded-md bg-black">
         <div>
           <div className="flex justify-between mt-4 px-6">
-            <h3 className="text-4xl font-bold text-slate-300">Add New Book</h3>
+            <h3 className="text-4xl font-bold text-slate-900">Add New Book</h3>
             <button
               onClick={router.back}
-              className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md shadow-sm hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300"
+              className="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800"
             >
               <X/>
             </button>
@@ -78,7 +78,7 @@ function NewBook() {
                     value={name}
                     required 
                     onChange={(e) => setName(e.target.value)}
-                    className="p-3 text-base rounded-md bg-slate-700 placeholder:text-sm placeholder-slate-400 outline-none focus:text-slate-300"
+                    className="p-3 text-base rounded-md bg-slate-700 placeholder:text-sm placeholder-slate-400 outline-none focus:text-slate-800"
                   />
                 </div>
 
@@ -91,7 +91,7 @@ function NewBook() {
                     value={author}
                     required
                     onChange={(e) => setAuthor(e.target.value)}
-                    className="p-3 text-base rounded-md bg-slate-700 placeholder:text-sm placeholder-slate-400 outline-none focus:text-slate-300"
+                    className="p-3 text-base rounded-md bg-slate-700 placeholder:text-sm placeholder-slate-400 outline-none focus:text-slate-800"
                   />
                 </div>
 
@@ -111,7 +111,7 @@ function NewBook() {
                   <button
                     type="submit" 
                     value="Submit" 
-                    className="border-2 border-slate-200 rounded-md py-2 px-4 hover:bg-slate-800 hover:text-slate-100 cursor-pointer"
+                    className="border-2 border-slate-800 rounded-md py-2 px-4 hover:bg-slate-800 hover:text-slate-800 cursor-pointer"
                   >{
                     !isLoading ? "Submit" :(
                       <Loader className="h-6 w-6 animate-spin"/>

@@ -55,9 +55,9 @@ function ListBooks({Books}:BookStore) {
                             className=""
                         />
                     </div>
-                    <h2 className="text-2xl pl-2 pt-4 text-slate-200">{book.name}</h2>
-                    <h5 className="text-base pl-2 text-slate-300">{book.author}</h5>
-                    <div className="flex justify-end mt-4 text-zinc-200 gap-x-4">
+                    <h2 className="text-2xl pl-2 pt-4 text-slate-900">{book.name}</h2>
+                    <h5 className="text-base pl-2 text-slate-900">{book.author}</h5>
+                    <div className="flex justify-end mt-4 text-zinc-900 gap-x-4">
                         <Link 
                             href={`/${book._id}`} 
                             className="cursor-pointer border-2 border-violet-800  py-2 px-2 hover:bg-violet-800 rounded-md text-base"

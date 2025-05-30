@@ -72,7 +72,7 @@ function UpdateBook({id,bookName,bookAuthor}:UpdateProps) {
               value={name}
               required 
               onChange={(e) => setName(e.target.value)}
-              className="p-3 text-base rounded-md bg-slate-700 placeholder:text-sm placeholder-slate-400 outline-none focus:text-slate-300"
+              className="p-3 text-base rounded-md bg-slate-700 placeholder:text-sm placeholder-slate-500 outline-none focus:text-slate-500"
             />
           </div>
 
@@ -104,7 +104,7 @@ function UpdateBook({id,bookName,bookAuthor}:UpdateProps) {
           <div className="flex gap-6 items-end">
             <button
               type="submit" 
-              className="border-2 border-slate-200 rounded-md py-2 px-4 hover:bg-slate-800 hover:text-slate-100 cursor-pointer"
+              className="border-2 border-slate-500 rounded-md py-2 px-4 hover:bg-slate-800 hover:text-slate-500 cursor-pointer"
             >{
               !isLoading ? "Submit" :(
                 <Loader className="h-6 w-6 animate-spin"/>
